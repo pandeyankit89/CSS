@@ -28,3 +28,17 @@
 - JavaScript → Behavior
 It is recommended to define styles in CSS rather than changing them via JavaScript. Instead of modifying styles directly, add predefined CSS classes dynamically.
 ---
+### ▪️ CSS `display` Property Values :
+
+| `<display>` Value | Description                                                                 | Example Usage                                                               |
+|-----------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| `display: block;`         | Element starts on a new line and stretches to the full width of its container. | `<div>`, `<p>`, `<section>`                                      |
+| `display: inline;`        | Element does not start on a new line and only takes up as much width as necessary. | `<span>`, `<a>`, `<strong>`                                  |
+| `display: inline-block;`  | Similar to `inline`, but allows setting width and height.                   | `<button>`, `<input>`                                               |
+| `display: none;`          | Hides the element; it will not be displayed on the page and <ins>does not take up space</ins>. | Used to hide elements dynamically with CSS or JavaScript. |
+| `display: flex;`          | Enables flexbox layout, allowing responsive arrangement of child elements.  | Creating navigation bars, aligning items horizontally or vertically.|
+| `display: grid;`          | Enables grid layout, allowing arrangement of child elements in rows and columns. | Designing complex web layouts with rows and columns.           |
+| `display: inline-flex;`   | Similar to `flex`, but the container behaves like an inline element.        | Inline navigation menus.                                            |
+| `display: inline-grid;`   | Similar to `grid`, but the container behaves like an inline element.        | Inline grid layouts within text.                                    |
+---
+
