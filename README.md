@@ -45,12 +45,12 @@ It is recommended to define styles in CSS rather than changing them via JavaScri
 
 The `position` property in CSS specifies how an element is positioned in a document. It can take the following values:
 
-| Position Value | Description                                                                                      | Example                                                                                         |
-|----------------|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| `static`       | Default positioning method. Elements are positioned <ins>according to the normal flow</ins> of the document. | ```css<br>element {<br>  position: static;<br>}<br>```                                          |
-| `relative`     | The element is positioned <ins>relative to its normal position</ins>.                                        | ```css<br>element {<br>  position: relative;<br>  top: 10px;<br>  left: 10px;<br>}<br>```       |
-| `absolute`     | The element is positioned <ins>relative to its nearest positioned ancestor</ins> (not static).               | ```css<br>element {<br>  position: absolute;<br>  top: 10px;<br>  left: 10px;<br>}<br>```       |
-| `fixed`        | The element is positioned <ins>relative to the browser window, and does not move when the page is scrolled.</ins> | ```css<br>element {<br>  position: fixed;<br>  top: 10px;<br>  right: 10px;<br>}<br>```        |
-| `sticky`       | The element is positioned <ins>based on the user's scroll position</ins>. It toggles between relative and fixed. | ```css<br>element {<br>  position: sticky;<br>  top: 0;<br>}<br>```                            |
+| Position Value | Description                                                                                      | Example                                                                        |
+|----------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| `static`       | Default positioning method. Elements are positioned <ins>according to the normal flow</ins> of the document. | ```position: static;```                                            |
+| `relative`     | The element is positioned <ins>relative to its normal position</ins>.                                        | ```position: relative;```<br>```top: 10px;```<br>```left: 10px;``` |
+| `absolute`     | The element is positioned <ins>relative to its nearest positioned ancestor</ins> (not static).               | ```position: absolute;```<br>```top: 10px;```<br>```left: 10px;```  |
+| `fixed`        | The element is positioned <ins>relative to the browser window, and does not move when the page is scrolled.</ins> | ```position: fixed;```<br>```top: 10px;```<br>```right: 10px;``` |
+| `sticky`       | The element is positioned <ins>based on the user's scroll position</ins>. It toggles between relative and fixed. | ```position: sticky;```<br>```top: 0;```                       |
 
 ---
