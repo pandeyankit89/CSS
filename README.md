@@ -21,6 +21,15 @@
 - If two rules apply, the one with higher specificity wins.
 - If specificity is equal, the one defined later wins (bottom rule overrides top).
 - You can use ```!important``` to force apply a style (not recommended unless necessary).
+### ▪️ CSS Cascading :
+  | Rule                     | Description                                                | Example / Notes                                                |
+|--------------------------|------------------------------------------------------------|----------------------------------------------------------------|
+| 1. Importance            | `!important` overrides all other rules                     | `color: red !important;` wins over everything else             |
+| 2. Specificity           | More specific selectors win over general ones              | `#id` > `.class` > `element`                                   |
+| 3. Source Order          | If specificity is equal, the later rule in CSS wins        | Last defined style is applied                                  |
+| 4. Inline Styles         | Inline styles beat internal/external (unless `!important`) | `<p style="color: green;">` has high priority                  |
+| 5. Style Origin          | User styles > Author styles > Browser default              | Inline > Internal > External > User Agent                      |
+
 ---
 ### ▪️ Best Practice:
 - HTML → Structure
