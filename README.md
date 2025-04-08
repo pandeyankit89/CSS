@@ -8,6 +8,24 @@
 | **Internal CSS**| In `<style>` tag in the `<head>` section | `<style> h1 { color: red; } </style>`|🔸For small projects or single HTML pages|• Easy to manage in one place<br>• Better than inline|• Still mixes content & design<br>• Not reusable across pages|
 | **External CSS**| In a separate `.css` file linked via `<link>`| `<link rel="stylesheet" href="style.css">`<br>`/* style.css */ h1 { color: red; }`|🔸Best for large/multi-page sites | • Clean separation<br>• Reusable across pages<br>• Caching friendly |• Extra HTTP request (but cached)<br>• File must load successfully |
 ---
+### ▪️ CSS Selectors :
+
+| Selector Type        | Syntax              | Description                                              | Example                        |
+|----------------------|---------------------|----------------------------------------------------------|--------------------------------|
+| Universal Selector   | `*`                 | Selects all elements                                     | `* { margin: 0; }`             |
+| Element Selector     | `tagname`           | Selects all elements of a given type                     | `p { color: red; }`            |
+| Class Selector       | `.classname`        | Selects all elements with a specific class               | `.box { border: 1px solid; }` |
+| ID Selector          | `#idname`           | Selects one element with a specific ID                   | `#header { background: gray; }`|
+| Grouping Selector    | `A, B`              | Applies same styles to multiple selectors                | `h1, h2 { font-size: 20px; }` |
+| Descendant Selector  | `A B`               | Selects elements `B` inside `A`                          | `div p { color: blue; }`      |
+| Child Selector       | `A > B`             | Selects <ins>direct child</ins> `B` of `A`               | `ul > li { list-style: none; }`|
+| Adjacent Sibling     | `A + B`             | Selects `B` immediately after `A`                        | `h1 + p { margin-top: 0; }`   |
+| General Sibling      | `A ~ B`             | Selects all `B` siblings after `A`                       | `h1 ~ p { color: green; }`    |
+| Attribute Selector   | `[attr=value]`      | Selects elements with a specific attribute value         | `input[type="text"]`          |
+| Pseudo-class         | `:pseudo-class`     | Selects elements in a specific state                    | `a:hover`, `li:first-child`   |
+| Pseudo-element       | `::pseudo-element`  | Styles parts of elements                                | `p::first-line`, `div::after` |
+
+---
 ### ▪️ Specificity Score Table :
 
 | Selector Type                     | Specificity Value | Example             |
