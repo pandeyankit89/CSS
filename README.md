@@ -92,3 +92,24 @@ The `position` property in CSS specifies how an element is positioned in a docum
 - `content="width=device-width"`: Make the <b>width of the page equal to the width of the user's device</b> (like phone, tablet, laptop).
 - `initial-scale=1.0"`: Set the <b>initial zoom level to 100% (no zoom)</b>.
 ---
+### ▪️ How to set Different styles based on some condition ?
+- By using `@media` rule in CSS. It **applies different styles depending on the device's screen size or type**.
+- It is part of **Responsive Design** 
+```css
+ /* If screen is 600px or less, apply this style */
+    @media (max-width: 600px) {
+      body {
+        background-color: lightgreen;
+      }
+    }
+```
+- Common Conditions Used in `@media` :
+  
+| Condition				        | What it means                                                         |   
+|-------------------------|-----------------------------------------------------------------------|
+|`max-width`			        |Apply styles if the screen is less than or equal to a certain width    |
+|`min-width`			        |Apply styles if the screen is greater than or equal to a certain width |
+|`orientation: portrait`  |Apply styles if the device is vertical                                 |
+|`orientation: landscape` |Apply styles if the device is horizontal                               |
+
+---
