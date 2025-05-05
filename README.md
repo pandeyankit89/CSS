@@ -81,3 +81,14 @@ The `position` property in CSS specifies how an element is positioned in a docum
 | `sticky`       | The element is positioned <ins>based on the user's scroll position</ins>. It toggles between relative and fixed. | ```position: sticky;```<br>```top: 0;```                       |
 
 ---
+### ▪️ How to make your webpage mobile or tablet friendly ?
+- by setting the "viewport"rule inside `<head>`
+```javascript
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+- `<meta>`: A tag that gives extra information about the web page (called metadata). It's not shown on the page itself.
+- `name="viewport"`: You're <b>setting rules for the visible area</b> of a webpage on a device.
+- `content="width=device-width"`: Make the <b>width of the page equal to the width of the user's device</b> (like phone, tablet, laptop).
+- `initial-scale=1.0"`: Set the <b>initial zoom level to 100% (no zoom)</b>.
+---
